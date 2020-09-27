@@ -1,0 +1,92 @@
+
+#rock {
+    position: fixed;
+    top: 150px;
+    left: 100px;
+}
+
+#rock:hover {
+    border: 2px solid black;
+}
+
+#paper {
+    position: fixed;
+    top: 150px;
+    left: 350px;
+}
+
+#paper:hover {
+    border: 2px solid black;
+}
+
+#scissors {
+    position: fixed;
+    top: 400px;
+    left: 200px;
+}
+
+#scissors:hover {
+    border: 2px solid black;
+}
+
+#random {
+    position: fixed;
+    top: 250px;
+    left: 1200px;
+    border: 2px solid black;
+}
+
+.scorePlayer {
+    position: fixed;
+    left: 250px;
+    font-size: 30px;
+}
+
+.scoreComputer {
+    position: fixed;
+    top: 120px;
+    left: 1180px;
+    font-size: 30px;
+}
+
+#scorePlayer {
+    position: fixed;
+    top: 80px;
+    left: 300px;
+    font-size: 30px; 
+}
+
+#scoreComputer {
+    position: fixed;
+    top: 180px;
+    left: 1270px;
+    font-size: 30px;
+}
+
+#result {
+    position: fixed;
+    left: 750px;
+    font-size: 30px
+}
+
+#overallResult {
+    position: fixed;
+    left: 600px;
+    top: 80px;
+    font-size: 30px
+}
+
+h4 {
+    position: fixed;
+    top: 400px;
+    left: 600px;
+    font-size: 30px;   
+}
+
+h5 {
+    position: fixed;
+    top: 550px;
+    left: 450px;
+    font-size: 15px;
+    color: red;
+}
