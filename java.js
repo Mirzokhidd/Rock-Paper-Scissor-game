@@ -19,9 +19,6 @@ function playRock() {
     //Lose for Rock
      case '<a href="#"><img src="paper.png"/></a>': 
         results.innerHTML = "Lose";
-        //Player loses score
-        scorePlayer--;
-        scorePlacePlayer.innerHTML = scorePlayer;  
 
         if (scorePlayer == -1) {
             scorePlayer++;
@@ -35,9 +32,6 @@ function playRock() {
     //Win for Rock
     case '<a href="#"><img src="scissor.png"/></a>':
         results.innerHTML = "Win";
-        //Computer loses score
-        scoreComputer--;
-        scorePlaceComputer.innerHTML = scoreComputer;
 
         if (scoreComputer == -1) {
             scoreComputer++;
@@ -54,7 +48,7 @@ function playRock() {
     if ( scoreComputer == 5) {
         overallResult.innerHTML = "COMPUTER IS THE WINNER";
         scoreComputer = 0;
-        scorePlayer = 0;
+        scorePlayer = 0;  
     } else if(scorePlayer == 5) {
         overallResult.innerHTML = "PLAYER IS THE WINNER";
         scoreComputer = 0;
@@ -70,10 +64,6 @@ function playPaper() {
     //Win for Paper
     case '<a href="#"><img src="rock.png"/></a>':
         results.innerHTML = "Win";
-        //Computer loses score
-        scoreComputer--;
-        scorePlaceComputer.innerHTML = scoreComputer;
-
         if (scoreComputer == -1) {
             scoreComputer++;
             scorePlaceComputer.innerHTML = scoreComputer;
@@ -92,10 +82,6 @@ function playPaper() {
     //Lose for Paper
     case '<a href="#"><img src="scissor.png"/></a>':
         results.innerHTML = "Lose";
-        //Player loses score
-            scorePlayer--;
-            scorePlacePlayer.innerHTML = scorePlayer;
-
             if (scorePlayer == -1) {
                 scorePlayer++;
                 scorePlacePlayer.innerHTML = scorePlayer;
@@ -115,22 +101,14 @@ function playPaper() {
     } else if(scorePlayer == 5) {
         overallResult.innerHTML = "PLAYER IS THE WINNER";
         scoreComputer = 0;
-        scorePlayer = 0;
+        scorePlayer = 0;     
     };
 };
-
-
-
-
 
 function playScissor() {
     switch ( random.innerHTML =  plays[Math.floor(Math.random() * plays.length)]) {
     case '<a href="#"><img src="rock.png"/></a>':
-        results.innerHTML = "Lose";
-        //Player loses score
-            scorePlayer--;
-            scorePlacePlayer.innerHTML = scorePlayer;
-        
+        results.innerHTML = "Lose";     
             if (scorePlayer == -1) {
                 scorePlayer++;
                 scorePlacePlayer.innerHTML = scorePlayer;
@@ -141,15 +119,10 @@ function playScissor() {
         break;
     case '<a href="#"><img src="paper.png"/></a>': 
         results.innerHTML = "Win";
-        //Computer loses score
-        scoreComputer--;
-        scorePlaceComputer.innerHTML = scoreComputer;
-
         if (scoreComputer == -1) {
             scoreComputer++;
             scorePlaceComputer.innerHTML = scoreComputer;
         };
-     
         //Player gains a score
         scorePlayer++;
         scorePlacePlayer.innerHTML = scorePlayer;
@@ -161,7 +134,7 @@ function playScissor() {
 
      //Winner Results
      if ( scoreComputer == 5) {
-        overallResult.innerHTML = "COMPUTER IS THE WINNER";
+        overallResult.innerHTML = "COMPUTER IS THE WINNER.";
         scoreComputer = 0;
         scorePlayer = 0;
     } else if(scorePlayer == 5) {
@@ -169,4 +142,5 @@ function playScissor() {
         scoreComputer = 0;
         ScorePlayer = 0;
     };
+
 };
